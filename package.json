@@ -1,0 +1,40 @@
+{
+  "name": "travel-agency-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node api/test/mail.js",
+    "dev": "set NODE_ENV=dev && nodemon app.js",
+    "start": "node app.js",
+    "seed": "node api/seeds/runner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkmSasanga/travel-agency-be.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lkmSasanga/travel-agency-be/issues"
+  },
+  "homepage": "https://github.com/lkmSasanga/travel-agency-be#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mjml": "^4.13.0",
+    "mongoose": "^6.7.2",
+    "nodemailer": "^6.8.0",
+    "stripe": "^11.12.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
